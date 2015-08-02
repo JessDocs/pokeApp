@@ -1,0 +1,12 @@
+<h1> Current Pokemon </h1>
+
+<poke-display pokemon="currentPokemon"></poke-display>
+
+<h1> Pokemon List </h1>
+
+<div ng-repeat="pokemon in pokemons" ng-click="getPokemonInfo(pokemon.resource_uri)">
+
+{{pokemon.name}}
+
+</div>
+
